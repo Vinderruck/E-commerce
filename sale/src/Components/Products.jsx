@@ -1,9 +1,10 @@
 import React from 'react'
+import Hero from './Hero'
 
 const Products = () => {
   return (
-    <div className="mt-10 p-2 rounded w-full">
-
+    <div className="p-2 rounded w-full Product">
+ 
 
 
 <div className="border-slate-300 shadow-md p-2 border rounded-xl w-full">

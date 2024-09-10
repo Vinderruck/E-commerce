@@ -1,18 +1,21 @@
-import React,{useState,useContext} from 'react'
+import React,{useState,useContext, Component} from 'react'
 import { CiMenuKebab } from "react-icons/ci";
 import { MdAddShoppingCart ,MdLightMode,MdAccountCircle,} from "react-icons/md";
  
 import { IoMdArrowDropdown,IoMdSearch } from "react-icons/io";
 import { Appcontext } from '../Global/Global';
+import { Link } from 'react-router-dom';
  
  
 
  
  
-const Navbar = () => {
+const Navbar = ({onLinkClick}) => {
+  
   const {mood,handlethemechange} =useContext(Appcontext)
   const [Sign, setSign] = useState(false)
-  const [search, setsearch] = useState(false)
+  const [search, setsearch] = useState(false);
+  const [shopping, setshopping] = useState(false);
 
    
  
@@ -37,6 +40,7 @@ const Navbar = () => {
        </div>
         )}
        </div>
+     
    <div className="sm:flex flex-1 justify-center items-center hidden m-4 w-1/2">
     <input type="text" placeholder="enter your search " className="items-center border-x-slate-100 bg-slate-100 hover:bg-white shadow-md m-1 border rounded w-1/2 text-[16px] text-black text-center paragraph"/>
   &nbsp; <button className="items-center border-slate-300 bg-slate-200 hover:bg-white shadow-md m-0.5 p-1 border rounded w-3/10 text-[16px] text-center paragraph">search</button>
@@ -59,7 +63,7 @@ const Navbar = () => {
    <div className="flex justify-center items-center bg-slate-200 hover:bg-white shadow-md mr-6 rounded w-[30px] h-[30px]">  
     <MdLightMode onClick={()=>handlethemechange()}  /></div>
  <div className="flex justify-center items-center bg-slate-200 hover:bg-white shadow-md mr-6 rounded w-[30px] h-[30px] r-0">
-    <MdAddShoppingCart  className="p-1 w-full h-full"/></div>  </div>
+    <MdAddShoppingCart   onClick={()=>{ onLinkClick('Component2')}}   className="p-1 w-full h-full"/></div>  </div>
 
 
     </div>

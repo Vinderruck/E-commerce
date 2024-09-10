@@ -20,6 +20,7 @@
  }
  .prostart{
   height:100vh;
+ 
  }
  .sign{
   margin-right:1rem;
@@ -31,9 +32,19 @@ margin-top:8rem }
    
 }
 
+.Product{
+  margin-top:10rem;
+}
 .searchsm{
  position:fixed;
  right:0;
  left:0;
   
+}
+
+/*Media query*/
+@media screen and ( max-width:500px){
+  .Product{
+    margin-top:7rem;
+  }
 }
