@@ -1,10 +1,11 @@
 import React,{useState,useContext} from 'react'
 import { CiMenuKebab } from "react-icons/ci";
-import { MdAddShoppingCart } from "react-icons/md";
-import { IoMdArrowDropdown } from "react-icons/io";
-import { MdLightMode } from "react-icons/md";
-import { Appcontext } from '../Global/Global';
+import { MdAddShoppingCart ,MdLightMode,MdAccountCircle,} from "react-icons/md";
  
+import { IoMdArrowDropdown } from "react-icons/io";
+ 
+import { Appcontext } from '../Global/Global';
+import {  } from "react-icons/md";  
  
 
  
@@ -31,17 +32,20 @@ const Navbar = () => {
   &nbsp; <button className="items-center border-slate-300 bg-slate-200 hover:bg-white shadow-md p-1 border rounded w-3/10 text-center">search</button>
 
  </div>
-   
+ <div className="flex justify-center items-center w-auto">
+ <div  className="sm:flex justify-center items-center hidden bg-slate-100 shadow-md mr-1 p-1 rounded">
+<MdAccountCircle className="m-1"/>
+ <p className="sm:flex hidden">Account</p>
+ </div> 
  <div onClick={()=>setSign(!Sign)}className="flex justify-center items-center bg-slate-200 hover:bg-white shadow-md mr-6 rounded w-[30px] h-[30px]">
-   < IoMdArrowDropdown/>
+  < IoMdArrowDropdown/>
    {Sign &&(
     <div className="z-4 fixed flex justify-between items-center bg-blue-200 bg-opacity-90 shadow-black shadow-md backdrop-blur-md border rounded-md w-[10rem] h-[auto] sign">
     <div className="p-2"><button className="items-center border-slate-300 bg-slate-200 hover:bg-white shadow-md p-1 border rounded w-3/10 text-center">sign in</button></div>
     <div className="p-2"><button className="items-center border-slate-300 bg-slate-200 hover:bg-white shadow-md p-1 border rounded w-3/10 text-center">sign up</button></div>
     </div>
    )}
- </div>
- 
+ </div></div>
    <div className="flex justify-center items-center bg-slate-200 hover:bg-white shadow-md mr-6 rounded w-[30px] h-[30px]">  
     <MdLightMode onClick={()=>handlethemechange()}  /></div>
  <div className="flex justify-center items-center bg-slate-200 hover:bg-white shadow-md mr-6 rounded w-[30px] h-[30px] r-0">
