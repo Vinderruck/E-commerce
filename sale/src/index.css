@@ -1,0 +1,26 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+:root{
+  --light-main : white;
+  --dark-main:black;
+}
+ .nav{
+  right:0;
+  left:0;
+  top:0;
+ }
+ .prostart{
+  height:100vh;
+ }
+ .sign{
+  margin-right:1rem;
+margin-top:8rem }
+ 
+ 
