@@ -31,15 +31,15 @@ const Navbar = () => {
        <IoMdSearch onClick={()=>setsearch(!search)}/>
         {search &&(
           <div className="z-4 flex justify-center items-center bg-blue-200 bg-opacity-90 shadow-black shadow-md backdrop-blur-md border rounded-md w-full h-[auto] searchsm">
-          <input type="text" placeholder="enter your search " className="items-center border-x-slate-100 bg-slate-100 hover:bg-white shadow-md m-1 border rounded w-1/2 text-[16px] text-black text-center paragraph"/>
-        &nbsp; <button onClick={()=>setsearch(false)} className="items-center border-slate-300 bg-slate-200 hover:bg-white shadow-md p-1 border rounded w-3/12 text-[16px] text-center paragraph">search</button>
+          <input type="text" placeholder="enter your search " className="items-center border-x-slate-100 bg-slate-100 hover:bg-white shadow-md m-1 border rounded w-4/5 text-[16px] text-black text-center paragraph"/>
+        &nbsp; <button onClick={()=>setsearch(false)} className="items-center border-slate-300 bg-slate-200 hover:bg-white shadow-md p-1 border rounded w-1/5 text-[16px] text-center paragraph">search</button>
       
        </div>
         )}
        </div>
    <div className="sm:flex flex-1 justify-center items-center hidden m-4 w-1/2">
     <input type="text" placeholder="enter your search " className="items-center border-x-slate-100 bg-slate-100 hover:bg-white shadow-md m-1 border rounded w-1/2 text-[16px] text-black text-center paragraph"/>
-  &nbsp; <button className="items-center border-slate-300 bg-slate-200 hover:bg-white shadow-md p-1 border rounded w-3/10 text-[16px] text-center paragraph">search</button>
+  &nbsp; <button className="items-center border-slate-300 bg-slate-200 hover:bg-white shadow-md m-0.5 p-1 border rounded w-3/10 text-[16px] text-center paragraph">search</button>
 
  </div>
  <div className="flex justify-center items-center w-auto">
