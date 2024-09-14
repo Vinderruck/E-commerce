@@ -38,15 +38,15 @@
     
       <Form  onSubmit={handlesubmit}  className="flex flex-col justify-center items-center bg-blue-200 bg-opacity-40 p-2 rounded-lg w-full">
       <div className="bg-slate-400 bg-opacity-40 m-4 border rounded-md w-full text-center"><h1 className="paragraph">ADMIN LOGIN</h1></div>
-<Form.Group className="sm:flex-row justify-center items-center m-3">
+<Form.Group className="flex flex-col justify-center items-center m-3">
 <Form.Label className="m-2 paragraph">Your Email :</Form.Label>
     <Form.Control placeholder="Enter your Name" value={Email} onChange={(e)=>setEmail(e.value)} type="text" className="hover:bg-slate-300 border text-center paragraph rounnded-lg"/>
     </Form.Group>
-    <Form.Group  className="sm:flex-row flex-col justify-center items-center m-3">
+    <Form.Group  className="flex flex-col justify-center items-center m-3">
 <Form.Label className="m-2 paragraph">Your Name : </Form.Label>
     <Form.Control placeholder="Enter your Name" type="text" value={Name} onChange={(e)=>setName(e.value)}  className="paragraph hover:rounnded-lg border-white hover:bg-slate-300 border text-center"/>
     </Form.Group>
-    <Form.Group  className="sm:flex-row flex-col justify-center items-center m-3">
+    <Form.Group  className="flex flex-col justify-center items-center m-3">
 <Form.Label className="m-2 paragraph">Password :</Form.Label>
     <Form.Control placeholder="Enter your Name"  type="password" value={password} onChange={(e)=>setpassword(e.value)} className= "paragraph hover:rounnded-lg hover:bg-slate-300 border text-center"/>
     </Form.Group>
