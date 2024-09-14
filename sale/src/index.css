@@ -41,6 +41,9 @@ margin-top:8rem }
  left:0;
   
 }
+.login{
+  margin:10px;
+}
 
 /*Media query*/
 @media screen and ( max-width:500px){

@@ -54,7 +54,7 @@ const Navbar = ({onLinkClick}) => {
  <div onClick={()=>setSign(!Sign)}className="flex justify-center items-center bg-slate-200 hover:bg-white shadow-md mr-6 rounded w-[30px] h-[30px]">
   < IoMdArrowDropdown/>
    {Sign &&(
-    <div className="z-4 fixed flex justify-between items-center bg-blue-200 bg-opacity-90 shadow-black shadow-md backdrop-blur-md border rounded-md w-[10rem] h-[auto] sign">
+    <div className="z-4 fixed flex justify-between items-center bg-blue-200 bg-opacity-100 shadow-black shadow-md backdrop-blur-md border rounded-md w-[10rem] h-[auto] sign">
     <div className="p-2"><button className="items-center border-slate-300 bg-slate-200 hover:bg-white shadow-md p-1 border rounded w-3/10 text-[16px] text-center paragraph">sign in</button></div>
     <div className="p-2"><button className="items-center border-slate-300 bg-slate-200 hover:bg-white shadow-md p-1 border rounded w-3/10 text-[16px] text-center paragraph">sign up</button></div>
     </div>
