@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import Login from './router/routes.js';
 
  
 const App = express();
@@ -7,6 +8,7 @@ const App = express();
 
 App.use(express.json())
 App.use(cors())
+App.use('/login',Login)
 
 
 
