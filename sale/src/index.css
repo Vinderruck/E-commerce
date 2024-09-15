@@ -58,7 +58,7 @@ margin-top:8rem }
   width:50%
 }
 /*Media query*/
-@media screen and ( max-width:860px){
+@media screen and (min-width:400px) and (max-width:860px){
   .Product{
     margin-top:7rem;
   }
@@ -75,6 +75,21 @@ margin-top:8rem }
     }
     .form{
       margin-top:-2rem;
+     
+    }
+}
+
+@media screen and (max-width:390px){
+  .img{
+    margin-top:-3rem;
+   margin-bottom:-15rem;
+ padding:0;
+   
+     
+    
+    }
+    .form{
+      margin-top:1rem;
      
     }
 }
