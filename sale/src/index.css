@@ -44,10 +44,15 @@ margin-top:8rem }
 .login{
   margi-right:10rem;
 }
-
+.input{
+  width:50%
+}
 /*Media query*/
 @media screen and ( max-width:500px){
   .Product{
     margin-top:7rem;
+  }
+  .input{
+    width:100%;
   }
 }
