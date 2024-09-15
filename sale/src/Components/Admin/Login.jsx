@@ -32,23 +32,24 @@
    return (
   
  
-      <div className="w-full h-[80vh]">
+      <div className="p-7 w-full h-[80vh]">
        
-        <div className="flex justify-center items-center bg-slate-200 bg-opacity-70 mt-12 p-2 rounded-xl w-full h-full login">
+        <div className="flex justify-center items-center bg-slate-200 bg-opacity-70 mt-12 rounded-xl w-full h-full">
     
-      <Form  onSubmit={handlesubmit}  className="flex flex-col justify-center items-center bg-blue-200 bg-opacity-40 rounded-lg w-full h-full">
-      <div className="bg-slate-400 bg-opacity-40 m-4 border rounded-md w-full text-center"><h1 className="paragraph">ADMIN LOGIN</h1></div>
-<Form.Group className="flex flex-col justify-center items-center m-3">
+      <Form  onSubmit={handlesubmit}  className="flex flex-col justify-center items-center bg-blue-200 bg-opacity-40 rounded-lg w-full h-auto">
+      <div className="bg-slate-400 bg-opacity-40 m-4 border rounded-md w-full text-center">
+        <h1 className="text-[25px] paragraph">ADMIN LOGIN</h1></div>
+<Form.Group className="flex flex-col justify-center items-center m-3 w-11/12">
 <Form.Label className="m-2 paragraph">Your Email :</Form.Label>
-    <Form.Control placeholder="Enter your Name" value={Email} onChange={(e)=>setEmail(e.value)} type="text" className="hover:bg-slate-300 border w-full text-center paragraph rounnded-lg"/>
+    <Form.Control placeholder="Enter your Name" value={Email} onChange={(e)=>setEmail(e.value)} type="text" className="hover:bg-slate-300 border w-11/12 text-center paragraph rounnded-lg"/>
     </Form.Group>
-    <Form.Group  className="flex flex-col justify-center items-center m-3 w-full">
+    <Form.Group  className="flex flex-col justify-center items-center m-3 w-11/12">
 <Form.Label className="m-2 paragraph">Your Name : </Form.Label>
-    <Form.Control placeholder="Enter your Name" type="text" value={Name} onChange={(e)=>setName(e.value)}  className="paragraph hover:rounnded-lg border-white hover:bg-slate-300 border text-center"/>
+    <Form.Control placeholder="Enter your Name" type="text" value={Name} onChange={(e)=>setName(e.value)}  className="paragraph hover:rounnded-lg border-white hover:bg-slate-300 border w-11/12 text-center"/>
     </Form.Group>
-    <Form.Group  className="flex flex-col justify-center items-center m-3">
+    <Form.Group  className="flex flex-col justify-center items-center m-3 w-11/12">
 <Form.Label className="m-2 paragraph">Password :</Form.Label>
-    <Form.Control placeholder="Enter your Name"  type="password" value={password} onChange={(e)=>setpassword(e.value)} className= "paragraph hover:rounnded-lg hover:bg-slate-300 border text-center"/>
+    <Form.Control placeholder="Enter your Name"  type="password" value={password} onChange={(e)=>setpassword(e.value)} className= "paragraph hover:rounnded-lg hover:bg-slate-300 border w-11/12 text-center"/>
     </Form.Group>
     <div className="bg-slate-400 bg-opacity-40 m-4 border rounded-md w-[90px] text-center"> 
       <Button type="submit" className="hover:bg-white w-full paragraph">login</Button></div>
