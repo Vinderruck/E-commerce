@@ -34,9 +34,9 @@
  
       <div className="w-full h-[80vh]">
        
-        <div className="flex justify-center items-center bg-slate-200 bg-opacity-70 mt-12 p-1 rounded-xl w-full h-full login">
+        <div className="flex justify-center items-center bg-slate-200 bg-opacity-70 mt-12 p-2 rounded-xl w-full h-full login">
     
-      <Form  onSubmit={handlesubmit}  className="flex flex-col justify-center items-center bg-blue-200 bg-opacity-40 p-1 rounded-lg w-full">
+      <Form  onSubmit={handlesubmit}  className="flex flex-col justify-center items-center bg-blue-200 bg-opacity-40 rounded-lg w-full h-full">
       <div className="bg-slate-400 bg-opacity-40 m-4 border rounded-md w-full text-center"><h1 className="paragraph">ADMIN LOGIN</h1></div>
 <Form.Group className="flex flex-col justify-center items-center m-3">
 <Form.Label className="m-2 paragraph">Your Email :</Form.Label>
