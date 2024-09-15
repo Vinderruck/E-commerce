@@ -1,6 +1,7 @@
  import React,{useState} from 'react'
  import {Form,Button} from "react-bootstrap";
  import axios from 'axios';
+import { logo } from '../../assets';
  
  const   login = () => {
   document.documentElement.style.background = "white";
@@ -36,27 +37,27 @@
  
       <div className="p-4 w-full h-[80vh]">
        
-        <div className="flex justify-center items-center bg-slate-200 bg-opacity-70 mt-12 mr-auto mb-auto ml-auto p-1 rounded-xl w-[90%] h-full">
-    
-      <Form  onSubmit={handlesubmit}  className="flex flex-col justify-center items-center bg-blue-200 bg-opacity-40 rounded-lg w-full h-full">
-      <div className= "w-full text-center">
-        <h1 className="text-[25px] paragraph">ADMIN LOGIN</h1></div>
-<Form.Group className="flex flex-col justify-center items-center m-3 w-11/12">
+        <div className="flex flex-col justify-center items-center bg-slate-200 bg-opacity-70 mt-12 mr-auto mb-auto ml-auto p-1 rounded-xl w-[90%] h-full">
+  
+      <Form  onSubmit={handlesubmit}  className="flex flex-col items-center justify-center w-full h-full bg-blue-200 rounded-lg bg-opacity-40">
+      <div className="">  <img src={logo} alt="logo" className="object-cover w-full img"/>  </div> 
+  
+<Form.Group className="flex flex-col items-center justify-center w-11/12 h-auto m-3">
 <Form.Label className="m-2 paragraph">Your Email :</Form.Label>
     <Form.Control placeholder="Enter your Name" value={Email} onChange={(e)=>setEmail(e.target.value)} type="text"  autoComplete='off'  className="hover:bg-slate-300 border rounded-lg text-[20px] text-center input paragraph"/>
     </Form.Group>
-    <Form.Group  className="flex flex-col justify-center items-center m-3 w-11/12">
+    <Form.Group  className="flex flex-col items-center justify-center w-11/12 m-3">
 <Form.Label className="m-2 paragraph">Your Name : </Form.Label>
     <Form.Control placeholder="Enter your Name" type="text" value={Name} onChange={(e)=>setName(e.target.value)}   autoComplete='off' className="border-white hover:bg-slate-300 border rounded-lg text-[20px] text-center input paragraph"/>
     </Form.Group>
-    <Form.Group  className="flex flex-col justify-center items-center m-3 w-11/12">
+    <Form.Group  className="flex flex-col items-center justify-center w-11/12 m-3">
 <Form.Label className="m-2 paragraph">Password :</Form.Label>
     <Form.Control placeholder="Enter your Name"  type="password" value={password} onChange={(e)=>setpassword(e.target.value)}   autoComplete='off' className= "hover:bg-slate-300 border rounded-lg text-[20px] text-center input paragraph"/>
     </Form.Group>
-   <div className="flex justify-end items-end"><p className="text-black paragraph">forgot password</p></div> 
+   <div className="flex items-end justify-end"><p className="text-black paragraph">forgot password</p></div> 
     <div className="bg-slate-400 bg-opacity-40 m-4 border rounded-md w-[90px] text-center"> 
      
-      <Button type="submit" className="hover:bg-white w-full paragraph">login</Button></div>
+      <Button type="submit" className="w-full hover:bg-white paragraph">login</Button></div>
         </Form></div>
         </div>
  
