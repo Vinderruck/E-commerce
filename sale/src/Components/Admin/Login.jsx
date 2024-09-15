@@ -43,11 +43,11 @@ import { logo } from '../../assets';
       <div className="">  <img src={logo} alt="logo" className="object-cover w-full img"/>  </div> 
   
 <Form.Group className="flex flex-col items-center justify-center w-11/12 h-auto m-3">
-<Form.Label className="m-2 paragraph">Your Email :</Form.Label>
+<Form.Label className="m-2 paragraph">Email :</Form.Label>
     <Form.Control placeholder="Enter your Name" value={Email} onChange={(e)=>setEmail(e.target.value)} type="text"  autoComplete='off'  className="hover:bg-slate-300 border rounded-lg text-[20px] text-center input paragraph"/>
     </Form.Group>
     <Form.Group  className="flex flex-col items-center justify-center w-11/12 m-3">
-<Form.Label className="m-2 paragraph">Your Name : </Form.Label>
+<Form.Label className="m-2 paragraph">Name : </Form.Label>
     <Form.Control placeholder="Enter your Name" type="text" value={Name} onChange={(e)=>setName(e.target.value)}   autoComplete='off' className="border-white hover:bg-slate-300 border rounded-lg text-[20px] text-center input paragraph"/>
     </Form.Group>
     <Form.Group  className="flex flex-col items-center justify-center w-11/12 m-3">
