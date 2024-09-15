@@ -36,10 +36,10 @@
  
       <div className="p-7 w-full h-[80vh]">
        
-        <div className="flex justify-center items-center bg-slate-200 bg-opacity-70 mt-12 rounded-xl w-full h-full">
+        <div className="flex justify-center items-center bg-slate-200 bg-opacity-70 mt-12 p-1 rounded-xl w-full h-full">
     
-      <Form  onSubmit={handlesubmit}  className="flex flex-col justify-center items-center bg-blue-200 bg-opacity-40 rounded-lg w-full h-auto">
-      <div className="bg-slate-400 bg-opacity-40 m-4 border rounded-md w-full text-center">
+      <Form  onSubmit={handlesubmit}  className="flex flex-col justify-center items-center bg-blue-200 bg-opacity-40 rounded-lg w-full h-full">
+      <div className="bg-slate-400 bg-opacity-40 m-1 border rounded-md w-full text-center">
         <h1 className="text-[25px] paragraph">ADMIN LOGIN</h1></div>
 <Form.Group className="flex flex-col justify-center items-center m-3 w-11/12">
 <Form.Label className="m-2 paragraph">Your Email :</Form.Label>
