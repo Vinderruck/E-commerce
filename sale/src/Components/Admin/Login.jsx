@@ -43,17 +43,19 @@
         <h1 className="text-[25px] paragraph">ADMIN LOGIN</h1></div>
 <Form.Group className="flex flex-col justify-center items-center m-3 w-11/12">
 <Form.Label className="m-2 paragraph">Your Email :</Form.Label>
-    <Form.Control placeholder="Enter your Name" value={Email} onChange={(e)=>setEmail(e.target.value)} type="text" className="hover:bg-slate-300 border text-center input paragraph rounnded-lg"/>
+    <Form.Control placeholder="Enter your Name" value={Email} onChange={(e)=>setEmail(e.target.value)} type="text"  autoComplete='off'  className="hover:bg-slate-300 border rounded-lg text-[20px] text-center input paragraph"/>
     </Form.Group>
     <Form.Group  className="flex flex-col justify-center items-center m-3 w-11/12">
 <Form.Label className="m-2 paragraph">Your Name : </Form.Label>
-    <Form.Control placeholder="Enter your Name" type="text" value={Name} onChange={(e)=>setName(e.target.value)}  className="paragraph hover:rounnded-lg border-white hover:bg-slate-300 border text-center input"/>
+    <Form.Control placeholder="Enter your Name" type="text" value={Name} onChange={(e)=>setName(e.target.value)}   autoComplete='off' className="border-white hover:bg-slate-300 border rounded-lg text-[20px] text-center input paragraph"/>
     </Form.Group>
     <Form.Group  className="flex flex-col justify-center items-center m-3 w-11/12">
 <Form.Label className="m-2 paragraph">Password :</Form.Label>
-    <Form.Control placeholder="Enter your Name"  type="password" value={password} onChange={(e)=>setpassword(e.target.value)} className= "paragraph hover:rounnded-lg hover:bg-slate-300 border text-center input"/>
+    <Form.Control placeholder="Enter your Name"  type="password" value={password} onChange={(e)=>setpassword(e.target.value)}   autoComplete='off' className= "hover:bg-slate-300 border rounded-lg text-[20px] text-center input paragraph"/>
     </Form.Group>
+   <div className="flex justify-end items-end"><p className="text-black paragraph">forgot password</p></div> 
     <div className="bg-slate-400 bg-opacity-40 m-4 border rounded-md w-[90px] text-center"> 
+     
       <Button type="submit" className="hover:bg-white w-full paragraph">login</Button></div>
         </Form></div>
         </div>
