@@ -6,8 +6,7 @@ import { logo } from '../../assets';
  const   login = () => {
   document.documentElement.style.background = "white";
 
- const [Email, setEmail] = useState("")
- const [Name, setName] = useState("")
+ const [Email, setEmail] = useState("");
   const [password, setpassword] = useState("")
   const [Error, setError] = useState(null)
 
@@ -19,7 +18,7 @@ import { logo } from '../../assets';
    
     const response = await axios.post("http://localhost:5001/admin",{
      Email,
-     Name,
+    
      password,
       headers: {
         "Content-Type": "application/json"
@@ -33,37 +32,31 @@ import { logo } from '../../assets';
   }
  
    return (
-  
- 
-      <div className="w-full h-[90vh]">
-       
-        <div className="flex flex-col justify-center items-center bg-slate-200 bg-opacity-70 mt-12 mr-auto mb-auto ml-auto p-6 rounded-xl w-[90%] h-full">
-        <div className="flex justify-center items-center imgdiv">  <img src={logo} alt="logo" className="w-full h-auto img object-cover"/>  </div>
-      <Form  onSubmit={handlesubmit}  className="flex flex-col justify-center items-center rounded-lg w-full h-full form">
-      
-<Form.Group className="flex flex-col justify-center items-center m-3 w-11/12 h-auto">
-<Form.Label className="m-2 text-[16px] paragraph">Email :</Form.Label>
-    <Form.Control placeholder="Enter your Name" value={Email} onChange={(e)=>setEmail(e.target.value)} type="text" 
-     autoComplete='off'  className="hover:bg-slate-300 border rounded-lg h-[40px] text-[16px] text-center input paragraph"/>
-    </Form.Group>
-    <Form.Group  className="flex flex-col justify-center items-center m-3 w-11/12">
-<Form.Label className="m-2 text-[16px] paragraph">Name : </Form.Label>
-    <Form.Control placeholder="Enter your Name" type="text" value={Name} onChange={(e)=>setName(e.target.value)}   
-    autoComplete='off' className="border-white hover:bg-slate-300 border rounded-lg h-[40px] text-[16px] text-center input paragraph"/>
-    </Form.Group>
-    <Form.Group  className="flex flex-col justify-center items-center m-3 w-11/12">
-<Form.Label className="m-2 text-[16px] paragraph">Password :</Form.Label>
-    <Form.Control placeholder="Enter your Name"  type="password" value={password} onChange={(e)=>setpassword(e.target.value)}
-       autoComplete='off' className= "hover:bg-slate-300 border rounded-lg h-[40px] text-[16px] text-center input paragraph"/>
-    </Form.Group>
-   <div className="flex justify-end items-end"><p className="text-black paragraph">forgot password</p></div> 
-    <div className="bg-slate-400 bg-opacity-40 m-4 border rounded-md w-[90px] text-center"> 
-     
-      <Button type="submit" className="hover:bg-white w-full paragraph">login</Button></div>
+<section className="flex justify-center items-center w-full h-full">
+  <div className="flex flex-col justify-center items-center bg-slate-200 shadow-black shadow-md mt-20 mr-5 ml-5 rounded-md w-full">
+    <img src={logo} alt="logo" className="object-cover"/>
+    <h1 className="text-[20px] paragraph">Admin login</h1>
 
-        </Form></div>
-        </div>
- 
+    <Form onSubmit={handlesubmit} className='flex flex-col justify-center items-center m-4 w-11/12'> 
+      <Form.Group className="flex flex-col justify-center items-center m-3 w-full">
+        <Form.Label className="m-2 text-[16px]">Email:</Form.Label>
+        <Form.Control type="text"  placeholder="Your Email"
+         className="p-1 rounded-md text-[16px] text-center input"
+         value={Email}
+         onChange={(e)=>setEmail(e.target.value)}/>
+      </Form.Group>
+      <Form.Group className="flex flex-col justify-center items-center w-full">
+        <Form.Label className="m-2 text-[16px]">Password:</Form.Label>
+        <Form.Control type="password"  
+        maxLength="8" minLength="6 "placeholder="Your Password"
+         className="p-1 rounded-md text-[16px] text-center input" required
+         value={password}
+         onChange={(e)=>setpassword(e.target.value)}/>
+      </Form.Group  >
+     <Form.Group className="flex justify-center items-center w-full"><Button type="submit" className="bg-slate-300 shadow-black shadow-md m-2 border rounded-md w-2/12 text-center">Login</Button></Form.Group> 
+     </Form>
+  </div>
+</section>
    )
  }
  
