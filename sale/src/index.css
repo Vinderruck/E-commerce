@@ -42,10 +42,14 @@ margin-top:8rem }
   
 }
 .img{
-  margin-top:-9rem;
-  margin-bottom:-13rem;
-  padding:2rem;
-  height:400px;
+  margin-top:-10rem;
+   margin-bottom:-14rem;
+   padding:5rem;
+  
+ 
+}
+.form{
+  margin-top:-5rem;
 }
 .login{
   margi-right:10rem;
@@ -54,7 +58,7 @@ margin-top:8rem }
   width:50%
 }
 /*Media query*/
-@media screen and ( max-width:500px){
+@media screen and ( max-width:860px){
   .Product{
     margin-top:7rem;
   }
@@ -62,9 +66,14 @@ margin-top:8rem }
     width:100%;
   }
   .img{
-  height:310px;
-  margin-top:-9rem;
-  margin-bottom:-13rem;
-  
-  }
+    margin-top:-3rem;
+   margin-bottom:-7rem;
+ padding:0;
+    
+     
+    
+    }
+    .form{
+      margin-top:0;
+    }
 }
