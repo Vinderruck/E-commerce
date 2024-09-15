@@ -1,2 +1,3 @@
  import Login from './Login.jsx';
- export{Login}
+ import Nav from './Navbar/Nav.jsx';
+ export{Login,Nav}

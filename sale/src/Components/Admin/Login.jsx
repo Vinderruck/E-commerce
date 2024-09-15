@@ -33,7 +33,7 @@ import { logo } from '../../assets';
  
    return (
 <section className="flex justify-center items-center w-full h-full">
-  <div className="flex flex-col justify-center items-center bg-slate-200 shadow-black shadow-md mt-20 mr-5 ml-5 rounded-md w-full">
+  <div className="flex flex-col justify-center items-center bg-slate-200 shadow-black shadow-md mt-20 mr-5 ml-5 rounded-md w-full h-full">
     <img src={logo} alt="logo" className="object-cover"/>
     <h1 className="text-[20px] paragraph">Admin login</h1>
 

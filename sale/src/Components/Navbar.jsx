@@ -5,6 +5,7 @@ import { MdAddShoppingCart ,MdLightMode,MdAccountCircle,} from "react-icons/md";
 import { IoMdArrowDropdown,IoMdSearch } from "react-icons/io";
 import { Appcontext } from '../Global/Global';
 import { Link } from 'react-router-dom';
+import { logo } from '../assets';
  
  
 
@@ -25,7 +26,7 @@ const Navbar = ({onLinkClick}) => {
 
 
         <div className="flex justify-center items-center bg-slate-200 w-full text-center"> 
-        <h1 className="p-3 font-bold text-[20px] text-black heading">E-COMMERCE</h1></div>
+        <img src={logo} alt="logo"/></div>
    
    <div className="flex justify-between items-center shadow-black shadow-md p-1 border rounded w-full">
    <div className="flex justify-center items-center bg-slate-200 hover:bg-white shadow-md ml-6 rounded w-[30px] h-[30px] r-0"> 
