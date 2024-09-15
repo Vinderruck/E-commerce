@@ -84,9 +84,14 @@ margin-top:8rem }
     margin-top:-3rem;
    margin-bottom:-15rem;
  padding:0;
-   
-     
     
+    
+    }
+    .Product{
+      margin-top:7rem;
+    }
+    .input{
+      width:100%;
     }
     .form{
       margin-top:1rem;
