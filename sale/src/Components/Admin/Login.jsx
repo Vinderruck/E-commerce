@@ -15,9 +15,11 @@
     e.preventDefault();
     try {
       
-    
- const  formData ={Email,Name,password}
-    const response = await axios.post("http://localhost:5001",formData,{
+   
+    const response = await axios.post("http://localhost:5001/admin",{
+     Email,
+     Name,
+     password,
       headers: {
         "Content-Type": "application/json"
       },
@@ -41,15 +43,15 @@
         <h1 className="text-[25px] paragraph">ADMIN LOGIN</h1></div>
 <Form.Group className="flex flex-col justify-center items-center m-3 w-11/12">
 <Form.Label className="m-2 paragraph">Your Email :</Form.Label>
-    <Form.Control placeholder="Enter your Name" value={Email} onChange={(e)=>setEmail(e.value)} type="text" className="hover:bg-slate-300 border w-11/12 text-center paragraph rounnded-lg"/>
+    <Form.Control placeholder="Enter your Name" value={Email} onChange={(e)=>setEmail(e.target.value)} type="text" className="hover:bg-slate-300 border w-11/12 text-center paragraph rounnded-lg"/>
     </Form.Group>
     <Form.Group  className="flex flex-col justify-center items-center m-3 w-11/12">
 <Form.Label className="m-2 paragraph">Your Name : </Form.Label>
-    <Form.Control placeholder="Enter your Name" type="text" value={Name} onChange={(e)=>setName(e.value)}  className="paragraph hover:rounnded-lg border-white hover:bg-slate-300 border w-11/12 text-center"/>
+    <Form.Control placeholder="Enter your Name" type="text" value={Name} onChange={(e)=>setName(e.target.value)}  className="paragraph hover:rounnded-lg border-white hover:bg-slate-300 border w-11/12 text-center"/>
     </Form.Group>
     <Form.Group  className="flex flex-col justify-center items-center m-3 w-11/12">
 <Form.Label className="m-2 paragraph">Password :</Form.Label>
-    <Form.Control placeholder="Enter your Name"  type="password" value={password} onChange={(e)=>setpassword(e.value)} className= "paragraph hover:rounnded-lg hover:bg-slate-300 border w-11/12 text-center"/>
+    <Form.Control placeholder="Enter your Name"  type="password" value={password} onChange={(e)=>setpassword(e.target.value)} className= "paragraph hover:rounnded-lg hover:bg-slate-300 border w-11/12 text-center"/>
     </Form.Group>
     <div className="bg-slate-400 bg-opacity-40 m-4 border rounded-md w-[90px] text-center"> 
       <Button type="submit" className="hover:bg-white w-full paragraph">login</Button></div>
