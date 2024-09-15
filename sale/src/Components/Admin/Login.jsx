@@ -38,7 +38,7 @@ import { logo } from '../../assets';
       <div className="w-full h-[90vh]">
        
         <div className="flex flex-col justify-center items-center bg-slate-200 bg-opacity-70 mt-12 mr-auto mb-auto ml-auto p-6 rounded-xl w-[90%] h-full">
-        <div className="flex justify-center items-center w-1/2">  <img src={logo} alt="logo" className="w-full h-auto img object-cover"/>  </div>
+        <div className="flex justify-center items-center imgdiv">  <img src={logo} alt="logo" className="w-full h-auto img object-cover"/>  </div>
       <Form  onSubmit={handlesubmit}  className="flex flex-col justify-center items-center rounded-lg w-full h-full form">
       
 <Form.Group className="flex flex-col justify-center items-center m-3 w-11/12 h-auto">
