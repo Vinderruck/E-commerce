@@ -1,11 +1,11 @@
 import React from 'react'
-import Hero from './Hero'
+import Hero from './Hero/Hero'
 
 const Products = () => {
   return (
     <div className="p-2 rounded w-full Product">
  
-
+<Hero/>
 
 <div className="border-slate-300 shadow-md p-2 border rounded-xl w-full">
 <h1 className="bg-slate-200 rounded text-center">Shoes</h1>

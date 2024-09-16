@@ -1,3 +1,4 @@
  import Login from './Login.jsx';
  import Nav from './Navbar/Nav.jsx';
- export{Login,Nav}
+ import Hero from '../Hero/Hero.jsx';
+ export{Login,Nav,Hero}

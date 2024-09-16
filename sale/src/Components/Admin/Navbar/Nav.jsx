@@ -26,7 +26,13 @@ const [Links, setLinks] = useState(false)
         <div className="fixed flex justify-center items-center bg-slate-200 opacity-80 shadow shadow-black backdrop-blur-md mt-24 rounded-md w-[35px] h-[35px]"> 
             <CiMenuKebab  onClick={()=>setLinks(!Links)} className="p-1 w-full h-full font-bold"/>
                 {Links && (
-                <div> hello</div>
+                <div className="relative justify-center items-center bg-white w-[400px] menu"> <ul>
+                    <li><a href="" >Add Product</a></li>
+                    <li><a href="" >Manage Product</a></li>
+                    <li><a href="" >Promotions</a></li>
+                    <li><a href="" >Add Product</a></li>
+                    <li><a href="" >Add Product</a></li>
+                    </ul></div>
                 )}
             </div>
      </div>
