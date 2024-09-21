@@ -1,3 +1,12 @@
 .Hero{
     background:linear-gradient(45deg,skyblue,white)
 }
+.center{
+    justify-content:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.image{
+     object-fit:contain;
+}
