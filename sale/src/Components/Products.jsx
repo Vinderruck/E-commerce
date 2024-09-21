@@ -3,11 +3,12 @@ import Hero from './Hero/Hero'
 
 const Products = () => {
   return (
-    <div className="p-2 rounded w-full Product">
+    <div className="justify-between p-2 rounded w-full Product">
  
-<Hero/>
+ <div className="m-3"><Hero/></div>
 
-<div className="border-slate-300 shadow-md p-2 border rounded-xl w-full">
+
+<div className="border-slate-300 shadow-md mt-10 p-2 border rounded-xl w-full">
 <h1 className="bg-slate-200 rounded text-center">Shoes</h1>
 <div className="flex flex-wrap justify-center gap-0">
 <div className="bg-slate-200 shadow-md m-1 border border-black rounded w-[100px] h-[100px]">

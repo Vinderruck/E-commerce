@@ -32,6 +32,7 @@ return Components[render]
    return (
      <div><Navbar onLinkClick={Display}/>
      <div >
+      
       {Render()}
       
       </div></div>
