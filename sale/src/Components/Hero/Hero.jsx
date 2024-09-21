@@ -59,7 +59,7 @@ const currentImage = imagesale[currentIndex];
 <div className="border-slate-300 shadow-md border rounded-xl w-full h-full center">
       <div className="flex justify-center items-center m-2">
         <h1 className="font-bold text-[16px] text-center text-orange-500 heading">All your Shopping is right here</h1></div>
-      <div className="flex sm:flex-row flex-col justify-between items-center gap-1 m-3 p-1 w-1/2">
+      <div className="flex sm:flex-row flex-col justify-between items-center gap-5 shadow-black shadow-lg m-3 p-3 rounded-xl w-11/12 heroimg w">
       <img src={currentImage} alt="Product image" className="shadow-md rounded-xl w-full h-[200px] image" />
       <img src={currentImage1} alt="Product image" className="shadow-md rounded-xl w-full h-[200px] image" />
       <img src={currentImage2} alt="Product image" className="shadow-md rounded-xl w-full h-[200px] image" />

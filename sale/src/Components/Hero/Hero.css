@@ -10,3 +10,13 @@
 .image{
      object-fit:contain;
 }
+
+
+
+/*mediaquery*/
+@media only screen and (min-width :550px) and (max-width:800px){
+    .heroimg{
+        flex-wrap:wrap;
+        display:flex;
+    }
+}
