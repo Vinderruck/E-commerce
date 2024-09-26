@@ -9,6 +9,8 @@
 :root{
   --light-main : white;
   --dark-main:black;
+  --light-border:black;
+  --dark-border:white;
 }
  .nav{
   right:0;

@@ -3,5 +3,11 @@ background:linear-gradient(45deg,white,skyblue)
 }
    
 .active{
-color:white;
+background:white;
+justify-content:center;
+align-items:center;
+height:3rem;
+box-shadow:1px 2px 3px 4px black;
+padding:4px;
+border-radius:20px;
 }

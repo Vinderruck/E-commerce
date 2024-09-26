@@ -1,8 +1,9 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
- import { Login, Nav } from "./Components/Admin";
+ import { Login, Nav, Dash} from "./Components/Admin";
 import Component from '../Component';
+ 
  
 
 const App=() =>{
@@ -14,7 +15,7 @@ const App=() =>{
     <Routes>
       <Route path="/" element={<Component/>}/>
       <Route path ="/Login" element={<Login/>}/>
-      <Route path ="/Dash" element={<Nav/>}/>
+      <Route path ="/Dash" element={<Dash/>}/>
     </Routes>
     </BrowserRouter>
   
